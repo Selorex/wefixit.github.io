@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wefix-it.biz/sitemap.xml
