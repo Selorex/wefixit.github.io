@@ -106,6 +106,48 @@
     .partner-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:24px;align-items:center;text-align:center}
     .partner-grid img{max-width:140px;max-height:48px;object-fit:contain;filter:brightness(0) invert(1)}
     footer{margin:28px 0;color:var(--muted);font-size:.95rem}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* space between logo and title */
+}
+
+.logo img {
+  height: 60px; /* adjust size here */
+  width: auto;
+  display: block;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 22px; /* space between nav items */
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
   </style>
 </head>
 <body>
