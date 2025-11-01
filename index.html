@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WeFix I.T. — Remote Tech Support and IT Consulting</title>
+  <meta name="description" content="WeFix I.T. provides secure remote tech support and IT consulting for home users and businesses. Troubleshooting, security, backups, migrations, and managed plans. No on site visit required." />
+  <link rel="canonical" href="https://wefix-it.biz/" />
+  <meta name="theme-color" content="#0b0b0b" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="WeFix I.T. — Remote Tech Support and IT Consulting" />
+  <meta property="og:description" content="Secure remote support for home and business. Twelve plus years of professional IT experience. Book a session or schedule a call." />
+  <meta property="og:url" content="https://wefix-it.biz/" />
+  <meta property="og:type" content="website" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "WeFix I.T.",
+    "url": "https://wefix-it.biz/",
+    "description": "Remote tech support and IT consulting for home and business users.",
+    "areaServed": "US",
+    "telephone": "+1-620-874-8142",
+    "email": "it.remotesupport@proton.me",
+    "sameAs": []
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0b0b0b;
+      --bg2:#0f0f0f;
+      --card:#131313;
+      --ink:#f5f5f5;
+      --muted:#bdbdbd;
+      --accent:#ff7a00;
+      --accent2:#ff9a3d;
+      --ring:rgba(255,122,0,.35);
+      --edge:rgba(255,255,255,.08);
+      --edge2:rgba(255,122,0,.25);
+      --shadow:0 10px 30px rgba(0,0,0,.5);
+      --br:20px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+      background:linear-gradient(180deg,#0b0b0b 0%,#0d0d0d 60%,#101010 100%);
+      color:var(--ink);
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{opacity:.95}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;flex-wrap:wrap;align-items:center;gap:16px;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#ffba66)}
+    .brand h1{margin:0;font-weight:900;letter-spacing:.2px;font-size:1.15rem}
+    nav{display:flex;gap:18px;flex-wrap:wrap}
+    nav a{color:var(--muted);font-weight:700}
+    nav a:hover, nav a.active{color:var(--accent)}
+    .hero{
+      margin-top:18px;
+      background:radial-gradient(1200px 480px at 50% -220px, rgba(255,122,0,.18), transparent 70%),
+                 linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,0));
+      border:1px solid rgba(255,122,0,.15);
+      border-radius:26px;
+      padding:40px;
+      box-shadow:var(--shadow)
+    }
+    .hero h2{margin:0 0 8px 0;color:var(--accent);font-size:2.4rem}
+    .hero p{margin:0;color:var(--muted)}
+    .cta-row{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{appearance:none;border:0;border-radius:14px;padding:12px 16px;font-weight:900;cursor:pointer}
+    .btn.primary{background:var(--accent);color:#0b0b0b}
+    .btn.secondary{background:transparent;color:var(--ink);border:1px solid rgba(255,122,0,.45)}
+    .btn.ghost{background:transparent;color:var(--ink);border:1px solid rgba(255,255,255,.18)}
+    .btn:focus{outline:3px solid var(--ring);outline-offset:2px}
+    .grid{display:grid;gap:18px}
+    @media(min-width:900px){.grid.two{grid-template-columns:1.1fr .9fr}}
+    .card{background:var(--card);border:1px solid var(--edge);border-radius:26px;padding:24px;box-shadow:var(--shadow)}
+    .card h3{margin:0 0 10px 0}
+    .muted{color:var(--muted)}
+    .small{font-size:.94rem}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#141414;border:1px solid var(--edge2);color:var(--muted);font-weight:800}
+    .tabs{display:flex;gap:8px;margin-bottom:14px}
+    .tab{padding:10px 14px;border-radius:12px;border:1px solid var(--edge2);background:#151515;color:var(--muted);font-weight:900;cursor:pointer}
+    .tab[aria-selected="true"]{background:#1b1b1b;color:var(--ink);border-color:rgba(255,122,0,.6)}
+    form{display:grid;gap:12px}
+    label{font-weight:900}
+    input,select,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:#0f0f0f;color:var(--ink)}
+    textarea{min-height:110px}
+    .row{display:grid;gap:12px}
+    @media(min-width:700px){.row.two{grid-template-columns:1fr 1fr}}
+    .pricing{display:grid;gap:18px}
+    @media(min-width:900px){.pricing{grid-template-columns:repeat(3,1fr)}}
+    .tier{position:relative}
+    .tier .price{font-size:2rem;font-weight:900;color:var(--accent)}
+    .tier ul{margin:10px 0 0 0;padding:0 0 0 18px;color:var(--muted)}
+    .tier strong{color:var(--ink)}
+    .tier.highlight{border:1px solid rgba(255,122,0,.35)}
+    .wide{grid-column:1/-1}
+    .partner-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:24px;align-items:center;text-align:center}
+    .partner-grid img{max-width:140px;max-height:48px;object-fit:contain;filter:brightness(0) invert(1)}
+    footer{margin:28px 0;color:var(--muted);font-size:.95rem}
+  </style>
+</head>
+<body>
+  <header class="container">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <h1>WeFix I.T.</h1>
+    </div>
+    <nav>
+      <a class="active" href="#top">Home</a>
+      <a href="#book">Book</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#partners">Partners</a>
+      <a href="#download">Download</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container" id="top">
+    <section class="hero">
+      <h2>Remote Tech Support and IT Consulting</h2>
+      <p>Over twelve years of professional experience in Information Technology. Secure remote sessions for home and business users. No on site visit required.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#book">Book a Session</a>
+        <a class="btn secondary" href="#schedule">Schedule a Call</a>
+        <a class="btn ghost" href="#download">Download Remote Client</a>
+      </div>
+    </section>
+
+    <section id="book" class="grid two" style="margin-top:22px">
+      <article class="card">
+        <h3>Booking</h3>
+        <p class="muted">Choose Home or Business and submit your request. Home sessions are a flat 75 for up to 45 minutes. Business sessions are 120 per hour. Monthly plans are quoted by call.</p>
+
+        <div class="tabs" role="tablist" aria-label="Booking type">
+          <button class="tab" role="tab" id="tab-home" aria-selected="true" aria-controls="panel-home">Home</button>
+          <button class="tab" role="tab" id="tab-biz" aria-selected="false" aria-controls="panel-biz">Business</button>
+        </div>
+
+        <!-- Home Form -->
+        <div id="panel-home" role="tabpanel" aria-labelledby="tab-home">
+          <form id="form-home" action="https://formspree.io/f/your-endpoint" method="POST">
+            <input type="hidden" name="type" value="Home Booking" />
+            <div class="row two">
+              <div>
+                <label for="home-name">Name</label>
+                <input id="home-name" name="name" required />
+              </div>
+              <div>
+                <label for="home-email">Email</label>
+                <input id="home-email" name="email" type="email" required />
+              </div>
+            </div>
+            <div class="row two">
+              <div>
+                <label for="home-date">Preferred date</label>
+                <input id="home-date" name="date" type="date" required />
+              </div>
+              <div>
+                <label for="home-time">Preferred time</label>
+                <input id="home-time" name="time" type="time" required />
+              </div>
+            </div>
+            <div class="row two">
+              <div>
+                <label for="home-phone">Phone</label>
+                <input id="home-phone" name="phone" placeholder="620-874-8142" />
+              </div>
+              <div>
+                <label for="home-os">Operating system</label>
+                <select id="home-os" name="os">
+                  <option>Windows</option>
+                  <option>macOS</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="home-notes">Issue summary</label>
+              <textarea id="home-notes" name="notes" placeholder="Describe the problem and when it started"></textarea>
+            </div>
+            <div class="small muted">Rate is 75 flat per remote session up to 45 minutes. Additional time is billed in 15 minute increments at the same rate.</div>
+            <div>
+              <button class="btn primary" type="submit">Request Home Session</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Business Form -->
+        <div id="panel-biz" role="tabpanel" aria-labelledby="tab-biz" hidden>
+          <form id="form-biz" action="https://formspree.io/f/your-endpoint" method="POST">
+            <input type="hidden" name="type" value="Business Booking" />
+            <div class="row two">
+              <div>
+                <label for="biz-name">Contact name</label>
+                <input id="biz-name" name="name" required />
+              </div>
+              <div>
+                <label for="biz-email">Work email</label>
+                <input id="biz-email" name="email" type="email" required />
+              </div>
+            </div>
+            <div class="row two">
+              <div>
+                <label for="biz-company">Company</label>
+                <input id="biz-company" name="company" />
+              </div>
+              <div>
+                <label for="biz-phone">Phone</label>
+                <input id="biz-phone" name="phone" placeholder="620-874-8142" />
+              </div>
+            </div>
+            <div class="row two">
+              <div>
+                <label for="biz-scope">Requested service</label>
+                <select id="biz-scope" name="scope">
+                  <option>Advanced troubleshooting</option>
+                  <option>Network configuration and VPN</option>
+                  <option>Microsoft 365 or Google Workspace management</option>
+                  <option>Data migration or recovery</option>
+                  <option>Security hardening and policy</option>
+                  <option>Penetration testing discovery call</option>
+                </select>
+              </div>
+              <div>
+                <label for="biz-users">Number of users or endpoints</label>
+                <input id="biz-users" name="users" type="number" min="1" placeholder="10" />
+              </div>
+            </div>
+            <div>
+              <label for="biz-notes">Environment notes</label>
+              <textarea id="biz-notes" name="notes" placeholder="Briefly describe your environment and goals"></textarea>
+            </div>
+            <div class="small muted">Business work is 120 per hour. Monthly plans are quoted after discovery based on scope and number of systems.</div>
+            <div>
+              <button class="btn primary" type="submit">Request Business Session</button>
+            </div>
+          </form>
+        </div>
+      </article>
+
+      <aside class="card" id="schedule">
+        <h3>Schedule a Call</h3>
+        <p class="muted">Request a short consultation to discuss goals, scope, and monthly maintenance options. If you prefer, call or text 620-874-8142.</p>
+        <form id="form-call" action="https://formspree.io/f/your-endpoint" method="POST">
+          <input type="hidden" name="type" value="Call Request" />
+          <div class="row two">
+            <div>
+              <label for="call-name">Name</label>
+              <input id="call-name" name="name" required />
+            </div>
+            <div>
+              <label for="call-email">Email</label>
+              <input id="call-email" name="email" type="email" required />
+            </div>
+          </div>
+          <div class="row two">
+            <div>
+              <label for="call-phone">Phone</label>
+              <input id="call-phone" name="phone" placeholder="620-874-8142" />
+            </div>
+            <div>
+              <label for="call-time">Preferred time window</label>
+              <select id="call-time" name="time">
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="call-topic">Topic</label>
+            <textarea id="call-topic" name="topic" placeholder="Brief description helps prepare"></textarea>
+          </div>
+          <div>
+            <button class="btn secondary" type="submit">Request Call</button>
+          </div>
+          <div class="small muted">Replace the form action with your own endpoint when ready.</div>
+        </form>
+      </aside>
+    </section>
+
+    <section id="download" class="card" style="margin-top:18px">
+      <h3>Download Remote Support Client (set.me)</h3>
+      <p class="muted">Open set.me and send the one time session code after we confirm by message or phone.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="https://set.me" target="_blank" rel="noopener">Open set.me</a>
+        <span class="pill">Instructions below</span>
+      </div>
+      <div style="margin-top:12px">
+        <p class="muted small">Open the app, click Start or Connect, then copy the code. Paste it in a reply to your booking email or text it to 620-874-8142 with your name.</p>
+        <div class="pill">Example code ABCD 123 456</div>
+      </div>
+    </section>
+
+    <section id="pricing" class="card" style="margin-top:18px">
+      <h3>Managed Support Plans</h3>
+      <p class="muted small">Plans are remote only. Monthly plans may scale by number of endpoints and servers.</p>
+
+      <div class="pricing" style="margin-top:8px">
+        <div class="card tier">
+          <strong>Bronze</strong><div class="price">$190<span class="small">/month</span></div>
+          <ul>
+            <li>Up to 2 remote sessions per month</li>
+            <li>Monthly health checks and updates</li>
+            <li>Basic backup and uptime review</li>
+            <li>Priority response within 1 business day</li>
+            <li>Discounted hourly rate 100 per hour</li>
+          </ul>
+        </div>
+
+        <div class="card tier highlight">
+          <strong>Silver</strong><div class="price">$350<span class="small">/month</span></div>
+          <ul>
+            <li>Up to 5 remote sessions per month</li>
+            <li>Monthly performance and security check</li>
+            <li>Backup and update verification</li>
+            <li>Priority response within 6 business hours</li>
+            <li>Discounted hourly rate 90 per hour</li>
+          </ul>
+        </div>
+
+        <div class="card tier">
+          <strong>Gold</strong><div class="price">$550<span class="small">/month</span></div>
+          <ul>
+            <li>Up to 8 remote sessions per month</li>
+            <li>Continuous monitoring</li>
+            <li>Monthly patch and system maintenance</li>
+            <li>Bi annual security review or light pentest</li>
+            <li>Priority response within 3 business hours</li>
+            <li>Discounted hourly rate 85 per hour</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pricing" style="margin-top:18px">
+        <div class="card tier">
+          <strong>Diamond</strong><div class="price">$950<span class="small">/month</span></div>
+          <ul>
+            <li>Up to 14 remote sessions per month</li>
+            <li>Full monitoring suite</li>
+            <li>Quarterly penetration testing and posture review</li>
+            <li>Policy and access control support</li>
+            <li>Priority response within 1 business hour</li>
+            <li>Discounted hourly rate 75 per hour</li>
+          </ul>
+        </div>
+
+        <div class="card tier wide">
+          <strong>Enterprise</strong><div class="price">Starting at $1,950<span class="small">/month</span></div>
+          <ul>
+            <li>Full infrastructure management and reporting</li>
+            <li>Advanced security and compliance</li>
+            <li>Quarterly pentesting and continuous vulnerability management</li>
+            <li>Dedicated account manager and lead engineer</li>
+            <li>Custom SLA and 24 by 7 emergency response options</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:18px">
+        <strong>Add ons</strong>
+        <ul style="margin-top:8px;color:var(--muted)">
+          <li>Full network or web app pentest starting at 300</li>
+          <li>Cloud backup setup 75 plus 10 per month per 100 GB storage</li>
+          <li>Microsoft 365 or Google Workspace migration quoted by scope</li>
+          <li>Hardware procurement cost plus 10 percent handling</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <h3>Advanced Security and Penetration Testing</h3>
+      <p class="muted">For businesses that want a clear view of security risks, a discovery call defines scope and goals before any engagement. Pricing varies by complexity and systems in scope.</p>
+      <a class="btn secondary" href="#schedule">Request a discovery call</a>
+    </section>
+
+    <section id="partners" class="card" style="margin-top:18px">
+      <h3>Our Trusted Partners</h3>
+      <p class="muted small">We collaborate with technology and security vendors to deliver reliable, enterprise grade solutions.</p>
+      <div class="partner-grid" style="margin-top:6px">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Eaton_Corporation_logo.svg" alt="Eaton" />
+        <img src="https://seeklogo.com/images/U/ubiquiti-networks-logo-DA8C62B402-seeklogo.com.png" alt="Ubiquiti" />
+        <img src="https://www.whitedogit.com/wp-content/uploads/2022/02/whitedog-logo.png" alt="WhiteDog IT" />
+        <img src="https://seeklogo.com/images/S/sentinelone-logo-41FDC8A9C3-seeklogo.com.png" alt="SentinelOne" />
+        <img src="https://seeklogo.com/images/A/aruba-networks-logo-5B7C1EDCC9-seeklogo.com.png" alt="Aruba HPE" />
+        <img src="https://seeklogo.com/images/D/dell-technologies-logo-9E2C3F0D21-seeklogo.com.png" alt="Dell Technologies" />
+        <img src="https://seeklogo.com/images/E/easy-voip-logo-86C2F2C92B-seeklogo.com.png" alt="EasyVoIP" />
+        <img src="https://seeklogo.com/images/M/microsoft-logo-4BA5F11B4C-seeklogo.com.png" alt="Microsoft" />
+        <img src="https://seeklogo.com/images/C/crowdstrike-logo-BAB7B0B804-seeklogo.com.png" alt="CrowdStrike" />
+        <img src="https://seeklogo.com/images/M/malwarebytes-logo-B9C99F28A2-seeklogo.com.png" alt="Malwarebytes" />
+        <img src="https://seeklogo.com/images/K/knowbe4-logo-1D7B2D9CA3-seeklogo.com.png" alt="KnowBe4" />
+      </div>
+    </section>
+
+    <section class="grid two" style="margin-top:18px" id="contact">
+      <article class="card">
+        <h3>Capabilities</h3>
+        <ul class="muted">
+          <li>Computer optimization, cleanup, and updates</li>
+          <li>Software installation and troubleshooting</li>
+          <li>Email setup, migration, and recovery</li>
+          <li>Data backup, recovery, and cloud configuration</li>
+          <li>Wi Fi and router optimization through guided sessions</li>
+          <li>Microsoft 365 and Google Workspace management</li>
+          <li>VPN and secure network configuration</li>
+          <li>Firewall assistance and security hardening</li>
+          <li>Remote server maintenance and patch management</li>
+          <li>Penetration testing discovery and vulnerability assessments</li>
+        </ul>
+        <p class="small muted">Vendor relationships allow discounted pricing on software and security tools when needed.</p>
+      </article>
+      <aside class="card">
+        <h3>Contact</h3>
+        <p class="muted">Message through the forms above or reach out directly.</p>
+        <p>Email <a href="mailto:it.remotesupport@proton.me">it.remotesupport@proton.me</a></p>
+        <p>Text or call us at __________</p>
+        <p class="small muted">Typical response is same day on weekdays. After hours support available by request.</p>
+      </aside>
+    </section>
+
+    <footer class="container">
+      <p>© <span id="y"></span> WeFix I.T. Remote Support. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script>
+    // Year
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Tabs logic
+    const tabHome = document.getElementById('tab-home');
+    const tabBiz = document.getElementById('tab-biz');
+    const panelHome = document.getElementById('panel-home');
+    const panelBiz = document.getElementById('panel-biz');
+
+    function selectTab(which){
+      const isHome = which === 'home';
+      tabHome.setAttribute('aria-selected', isHome);
+      tabBiz.setAttribute('aria-selected', !isHome);
+      panelHome.hidden = !isHome;
+      panelBiz.hidden = isHome;
+    }
+    tabHome.addEventListener('click', ()=> selectTab('home'));
+    tabBiz.addEventListener('click', ()=> selectTab('biz'));
+  </script>
+</body>
+</html>
