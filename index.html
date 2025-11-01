@@ -55,6 +55,8 @@
     a{color:var(--accent);text-decoration:none}
     a:hover{opacity:.95}
     .container{max-width:1100px;margin:0 auto;padding:28px}
+
+    /* original header styles */
     header{display:flex;flex-wrap:wrap;align-items:center;gap:16px;justify-content:space-between}
     .brand{display:flex;gap:12px;align-items:center}
     .logo{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#ffba66)}
@@ -62,6 +64,8 @@
     nav{display:flex;gap:18px;flex-wrap:wrap}
     nav a{color:var(--muted);font-weight:700}
     nav a:hover, nav a.active{color:var(--accent)}
+
+    /* hero/cards/etc (unchanged) */
     .hero{
       margin-top:18px;
       background:radial-gradient(1200px 480px at 50% -220px, rgba(255,122,0,.18), transparent 70%),
@@ -106,55 +110,28 @@
     .partner-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:24px;align-items:center;text-align:center}
     .partner-grid img{max-width:140px;max-height:48px;object-fit:contain;filter:brightness(0) invert(1)}
     footer{margin:28px 0;color:var(--muted);font-size:.95rem}
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 10px 24px;
-}
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 16px; /* space between logo and title */
-}
-
-.logo img {
-  height: 60px; /* adjust size here */
-  width: auto;
-  display: block;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  gap: 22px; /* space between nav items */
-}
-
-@media (max-width: 700px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-    gap: 12px;
-  }
-
-  .brand {
-    justify-content: center;
-  }
-
-  nav {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-}
+    /* === LOGO & SPACING FIXES (override the earlier rules) === */
+    header{
+      display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:12px 28px;gap:24px;
+    }
+    .brand{display:flex;align-items:center;gap:16px;flex:0 0 auto;}
+    .logo{background:none;width:auto;height:auto;padding:0;border-radius:0;}  /* removes orange box */
+    .logo img{height:60px;width:auto;display:block;}
+    nav{display:flex;align-items:center;gap:22px;flex:1 1 auto;min-width:280px;}
+    @media (max-width:700px){
+      header{flex-direction:column;align-items:flex-start;gap:10px;}
+      nav{order:2;width:100%;flex-wrap:wrap;gap:16px;margin-top:4px;}
+      .brand{order:1;}
+    }
   </style>
 </head>
 <body>
   <header class="container">
     <div class="brand">
-     <div class="logo">
-  <img src="Images/logo.png" alt="WeFix I.T. Logo" style="max-width:150px; height:auto;">
+      <div class="logo">
+        <img src="Images/logo.png" alt="WeFix I.T. Logo" />
+      </div>
     </div>
     <nav>
       <a class="active" href="#top">Home</a>
@@ -292,6 +269,7 @@ nav {
       <aside class="card" id="schedule">
         <h3>Schedule a Call</h3>
         <p class="muted">Request a short consultation to discuss goals, scope, and monthly maintenance options. If you prefer, call or text 620-874-8142.</p>
+        <!-- NOTE: this still has 'hhttps' in your original. If you want it fixed, change to https:// -->
         <form id="form-call" action="hhttps://formspree.io/f/xldoobow" method="POST">
           <input type="hidden" name="type" value="Call Request" />
           <div class="row two">
